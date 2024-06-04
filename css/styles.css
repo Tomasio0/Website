@@ -15,6 +15,17 @@ body h1, h2, h3, h4, h5, h6, p{
     font-size:1.5rem;
 }
 
+@media (max-width:768px){
+
+    .btn-primary{
+        padding: 1rem 1.7rem;
+    }
+
+    .button-span{
+        font-size:1rem;
+    }
+}
+/*
 .header-nav .nav-container{
     margin-top:5%;
 }
@@ -28,6 +39,8 @@ body h1, h2, h3, h4, h5, h6, p{
     padding:9px 30px;
     display: inline-block;
 }
+
+
 .header-nav .navbar-nav .nav-item {
     color: white !important;
     margin-right: 20px;
@@ -42,15 +55,72 @@ body h1, h2, h3, h4, h5, h6, p{
 }
 
 @media (max-width:768px){
+
+    .header-nav .header-bubble{
+        background:none;
+        border:none;
+    }
+
+    .header-nav .navbar{
+        background:none;
+    }
+
     .header-nav .navbar-nav .nav-item {
         color: white !important;
         margin-right: 5px;
     }
     
+    
     .header-nav .navbar-nav .nav-link {
         font-size:0.8rem;
         color: white !important;
     }
+}
+
+*/
+
+.header-nav .navbar-nav {
+    background-color: #353a50;
+    padding:1rem 2rem;
+    border: #353a50 1px solid;
+    border-radius: 20px;
+}
+
+.header-nav .navbar-nav .nav-item {
+    color: white !important;
+    margin-right: 20px;
+}
+
+.header-nav .navbar-nav .nav-link {
+    font-size:1.2rem;
+    color: white !important;
+}
+.header-nav .navbar-nav .nav-link:last-child {
+    margin-right: 0;
+}
+
+.header-nav .navbar-toggler{
+    border:0;
+    outline:0;
+}
+
+.header-nav .navbar-toggler i{
+    color:white;
+    font-size:2rem;
+    border:0;
+    outline:0;
+}
+
+@media (max-width:768px){
+    .header-nav .navbar-nav {
+        background: none;
+        border: 0;
+        text-align:right;
+        padding:0;
+    }
+
+
+
 }
 
 .adwall-bubble{
@@ -72,6 +142,11 @@ body h1, h2, h3, h4, h5, h6, p{
 }
 
 @media (max-width:768px){
+
+    .adwall-bubble{
+        border-radius: 0 40px 0 40px;
+    }
+
     .adwall-bubble img{
         max-width: 100%;
         height: 100%;
@@ -108,6 +183,26 @@ body h1, h2, h3, h4, h5, h6, p{
     justify-content: center;
 }
 
+@media (max-width:1400px) and (min-width:769px){
+    .tutorial-bubble{
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .tutorial-bubble .img-container{
+        width:200px;
+        height:200px;
+        margin:0 auto;
+    }
+
+
+    .tutorial-bubble{
+        border-radius: 0 40px 0 40px;
+    }
+}
+
 .social-icons{
     margin-bottom:1.5rem;
 }
@@ -130,6 +225,12 @@ body h1, h2, h3, h4, h5, h6, p{
     justify-content: center;
 }
 
+@media (max-width:768px){
+    .social-icon-container{
+        margin-right:1.5rem;
+    }
+}
+
 .footer{
     background-color:#1f2334;
 }
@@ -142,4 +243,10 @@ body h1, h2, h3, h4, h5, h6, p{
 .footer .navbar-nav .nav-link {
     font-size:1.2rem;
     color: white !important;
+}
+
+@media (max-width:768px){
+    .footer-logo{
+        margin-left:-5px;
+    }
 }

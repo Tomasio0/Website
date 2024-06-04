@@ -642,6 +642,20 @@ progress {
   margin-left: auto;
 }
 
+@media (max-width:768px){
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm
+  {
+    padding-right: calc(var(--bs-gutter-x) * 0.9);
+    padding-left: calc(var(--bs-gutter-x) * 0.9);
+  }
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -1747,6 +1761,11 @@ progress {
   .g-xxl-5,
   .gx-xxl-5 {
     --bs-gutter-x: 3rem;
+  }
+
+  .g-xxl-6,
+  .gx-xxl-6 {
+    --bs-gutter-x: 4rem;
   }
   .g-xxl-5,
   .gy-xxl-5 {
@@ -9223,6 +9242,11 @@ textarea.form-control-lg {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
+
+  .px-md-6 {
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+  }
   .py-md-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -10919,20 +10943,28 @@ section {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #fff;
+
 }
 #mainNav .navbar-brand {
-  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:active {
-  color: #2937f0;
+
 }
 #mainNav .navbar-toggler {
-  font-size: 0.875rem;
-  padding: 0.75rem 1rem;
-  color: #212529;
+  border:none;
+  outline:none;
+}
+
+#mainNav .navbar-toggler:active {
+  border:none;
+  outline:none;
+}
+
+#mainNav .navbar-toggler i{
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #212529;

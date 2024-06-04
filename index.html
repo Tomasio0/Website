@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Wixi</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/Wixi logo CUT.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -20,11 +20,15 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <div class="container mt-6 header-nav nav-container text-center">
+        <!--
+        <div class="container mt-5 header-nav nav-container text-center">
             <div class="row">
                 <div class="col-12">
                     <div class="header-bubble d-inline-block">
-                        <nav class="navbar navbar-expand navbar-dark p-0">
+                        <nav class="navbar navbar-expand-md navbar-dark p-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="bi-list"></i>
+                            </button>
                             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
@@ -46,22 +50,89 @@
                 </div>
             </div>
         </div>
+    
+
+    <div class="header-bubble d-inline-block">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container px-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Token</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<span class="navbar-toggler-icon"></span>
+-->
+
+<!-- Inicio del menu -->
+    
+<nav class="navbar header-nav navbar-expand-md pt-5 ">
+    <div class="container-fluid">
+    <!-- icono o nombre -->
+
+    <a class="navbar-brand d-block d-md-none" href="#">
+      <img src="assets/img/Wixi logo CUT.png" width="60px" alt="">
+    </a>
+        
+    <!-- boton del menu -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi-list"></i>
+    </button>
+
+      <!-- elementos del menu colapsable -->
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav m-auto fs-5">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Token</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log In</a>
+          </li>
+
+      </ul>
+    </div>
+    </div>  
+  </nav>
 
 
         <!-- Mashead header-->
        
 
         <header class="masthead p-0  bg-body">
-            <div class="container my-5 my-md-6">
+            <div class="container mt-5 mb-6 my-md-6">
                 <div class="row gx-6 align-items-center">
                     <div class="col-lg-7 ">
                         <!-- Mashead text and app badges-->
-                        <div class="col-4 mb-4 d-flex flex-row  align-items-center">
-                            <img src="assets/img/Wixi logo.png" width="60px" class="me-3" alt="">
+                        <div class="col-4 mb-4 flex-row d-none d-md-flex align-items-center">
+                            <img src="assets/img/Wixi logo.png" width="70px" class="me-2" alt="">
                             <h4 class="p-0 m-0">Wixi</h4>
                         </div>
-                        <div class="mb-0 mb-sm-5 mb-lg-0 text-left text-lg-start">
-                            <h1 class="display-1 lh-1 mb-5">Monetize your Audience</h1>
+                        <div class="mb-0  text-left text-lg-start">
+                            <h1 class="display-1 lh-1 mb-4 mb-md-5 fw-normal">Monetize your <span class="fw-bold">Audience</span></h1>
                             
                             <div class="d-flex flex-column flex-lg-row align-items-start ">
                                 <button class="btn btn-primary rounded-pill  mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
@@ -74,7 +145,7 @@
                     </div>
                     <div class="col-lg-5 ">
                         <!-- Masthead device mockup feature-->
-                        <div class="masthead-image">
+                        <div class="masthead-image d-none d-lg-block">
                             <img src="assets/img/1.png" class="img-fluid p-5 p-lg-2 " alt="">
                         </div>
                     </div>
@@ -87,7 +158,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                     <h2 class="text-left text-md-center fw-normal mb-5">Introducing Ad Wall</h2>
+                     <h2 class="text-left text-md-center fw-normal mb-4 mb-md-5">Introducing <span class="fw-bold">Ad Wall</span></h2>
                     <div class="adwall-bubble mx-auto">
                         <img class="img-fluid" src="assets/img/adwall-screenshot.png" alt="">
                     </div>
@@ -102,38 +173,38 @@
 
     <div class="container my-6 my-md-6">
         <div class="row mb-3 mb-md-5">
-            <h2 class="text-left text-md-center">How it works?</h2>
+            <h2 class="text-left text-md-center fw-normal">How it works?</h2>
             <p class="text-left text-md-center fs-4">One page,  six ads,  just share it</p>
         </div>  
-        <div class="row gy-5 gx-6">
-            <div class="col-11 mx-auto col-lg-4">
+        <div class="row gy-5 gx-6 gx-lg-5 gx-xxl-6">
+            <div class="col-11 col-lg-4">
                 <div class="tutorial-bubble d-flex flex-column justify-content-center px-4 pt-1 pb-3">
                     <p class="text-left mt-4 mb-0 fs-3 fw-bolder">1.</p>
                     <div class="mx-auto mt-0 mb-5 img-container">
                         <img src="assets/img/9.png"  class="mb-3 mb-sm-5" alt="">
                     </div>
                     <h3 class="text-center">SIGN UP</h3>
-                    <p class="text-center fs-5">Create your own Wixi account to access your dashboard</p>
+                    <p class="text-center fs-5">Create your own <span class="fw-bold">Wixi</span> account to access your dashboard</p>
                 </div>
             </div>
-            <div class="col-11 mx-auto col-lg-4">
+            <div class="col-11  col-lg-4">
                 <div class="tutorial-bubble d-flex flex-column justify-content-center px-4 pt-1 pb-3">
                     <p class="text-left mt-4 mb-0 fs-3 fw-bolder">2.</p>
                     <div class="mx-auto mt-0 mb-5 img-container">
                         <img src="assets/img/3.png"  class="mb-3 mb-sm-5" alt="">
                     </div>
                     <h3 class="text-center">SHARE</h3>
-                    <p class="text-center fs-5">Copy and share your Ad Wall link with your audience</p>
+                    <p class="text-center fs-5">Copy and share your <span class="fw-bold">Ad Wall</span> link with your audience</p>
                 </div>
             </div>
-            <div class="col-11 mx-auto col-lg-4">
+            <div class="col-11  col-lg-4">
                 <div class="tutorial-bubble d-flex flex-column justify-content-center px-4 pt-1 pb-3">
                     <p class="text-left mt-4 mb-0 fs-3 fw-bolder">3.</p>
                     <div class="mx-auto mt-0 mb-5 img-container">
                         <img src="assets/img/2.png"  class="" alt="">
                     </div>
                     <h3 class="text-center">EARN</h3>
-                    <p class="text-center fs-5">You earn money for every person who visit it</p>
+                    <p class="text-center fs-5">You earn money for <span class="fw-bold">every person</span> who visit it</p>
                 </div>
             </div>
             
@@ -155,7 +226,7 @@
                 <!-- Mashead text and app badges-->
                 <div class="mb-5 mb-lg-0 text-start">
                     <h2 class=" display-1 lh-1 mb-5">From visits to real earnings</h2>
-                    <p class="pb-5 fs-3">Unlock the potential of your online presence by sharing your advertising link and earning up to $1 for every 200 visits or 20 ad clicks.
+                    <p class="mb-5 mb-md-5 fs-3">Unlock the potential of your online presence by sharing your advertising link and earning up to <span class="fw-bold">$1</span> for every <span class="fw-bold">200</span> visits or <span class="fw-bold">20</span> ad clicks.
                     <br>
                     <br>    
                     Whether you're a content creator, influencer, or website owner, seize the opportunity to monetize your audience.</p>
@@ -182,15 +253,15 @@
         <div class="col-lg-6 order-2 order-md-1">
             <!-- Mashead text and app badges-->
             <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                <h2 class=" mb-2">Active advertising</h2>
+                <h2 class="fw-normal mb-2">Active advertising</h2>
                 <p class="pb-5 fs-3 mb-0">
                 <span class="fst-italic">Want more options?</span>
                 
                 <br>
                 <br>
-                Broaden your reach with WixiBot for your primary social media networks while rewarding each member of your audience with $1 for every 20 ad clicks. 
+                Broaden your reach with WixiBot for your primary social media networks while rewarding each member of your audience with <span class="fw-bold">$1</span> for every <span class="fw-bold">20</span> ad clicks. 
                 </p>
-                <p class="fs-3 fw-bold">AVAILABLE ON</p>
+                <p class="fs-3 mb-3 fw-bold">AVAILABLE ON</p>
                 <div class="social-icons d-flex flex-row">
                     
                     <div class="social-icon-container">
@@ -228,19 +299,14 @@
         <!-- Footer-->
 <footer class=" footer">
     <div class="container">
-        <div class="row pt-5 pb-3">
-            <div class="col-12 footer-line">
-                <hr>
+        <div class="row pt-5 pb-5">
+            <div class="footer-logo col-12 col-md-4 d-flex flex-row align-items-center">
+                <img src="assets/img/Wixi logo CUT.png" width="60px" class="me-3" alt="">
+                <h4 class="p-0 m-0">Wixi</h4>
             </div>
-        </div>
-        <div class="row pb-5">
-            <div class="col-4 d-flex flex-row  align-items-center">
-                <img src="assets/img/Wixi logo.png" width="80px" class="me-2" alt="">
-                <h4 class="p-0">Wixi</h4>
-            </div>
-            <div class="col-4 d-flex flex-row align-items-center">
+            <div class="col-12 col-md-4 d-flex flex-row align-items-start justify-content-start align-items-md-center justify-content-md-center">
                 <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                    <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNav">
+                    <div class="my-5 my-md-0 text-left text-md-center align-items-start justify-content-start align-items-md-center justify-content-md-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Home</a>
@@ -258,7 +324,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-4 d-flex flex-row justify-content-end align-items-center">
+            <div class="col-12 col-md-4 mb-5 mb-md-0 d-flex flex-row align-items-start justify-content-start align-items-md-center justify-content-md-center">
                 <p style="font-size:1.2rem;" class="p-0 m-0">© 2024 Wixi, Inc</p>
             </div>
         </div>
