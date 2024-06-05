@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-
-@font-face {
-    font-family: "Garet";
-    src: url("assets/fonts/Garet-Book.otf");
-    }
+:root {
+    --bg-color: #2b2f42;
+    --accent: #8351ef;
+}
 
 body h1, h2, h3, h4, h5, h6, p{
-    font-family: "Garet", sans-serif !important;
+    font-family: "Nunito Sans", sans-serif !important;
 }
 
 
@@ -87,14 +87,19 @@ body h1, h2, h3, h4, h5, h6, p{
 }
 
 .header-nav .navbar-nav .nav-item {
-    color: white !important;
+    color: white;
     margin-right: 20px;
 }
 
 .header-nav .navbar-nav .nav-link {
-    font-size:1.2rem;
-    color: white !important;
+    font-size:1.3rem;
+    color: #fff;
 }
+
+.header-nav .navbar-nav .nav-link:hover {
+    color: rgb(222, 222, 222);
+}
+
 .header-nav .navbar-nav .nav-link:last-child {
     margin-right: 0;
 }
@@ -208,12 +213,16 @@ body h1, h2, h3, h4, h5, h6, p{
 }
 
 .social-icon-container{
-    width: 70px;
+    width: 80px;
     height:auto;
-    margin-right:2.5rem;
+    margin-right:2rem;
     display:flex;
     flex-direction: column;
     justify-content:center;
+}
+
+.social-icon-container a{
+    padding: 5px;
 }
 
 .social-icon-container img{
@@ -236,13 +245,17 @@ body h1, h2, h3, h4, h5, h6, p{
 }
 
 .footer .navbar-nav .nav-item {
-    color: white !important;
+    color: white;
     margin-right: 20px;
 }
 
 .footer .navbar-nav .nav-link {
     font-size:1.2rem;
-    color: white !important;
+    color: white;
+}
+
+.footer .navbar-nav .nav-link:hover{
+    color: rgb(222, 222, 222);
 }
 
 @media (max-width:768px){
@@ -250,3 +263,84 @@ body h1, h2, h3, h4, h5, h6, p{
         margin-left:-5px;
     }
 }
+
+:root {
+    --color-primary: #8b54ff;
+    --color-secondary: #5ddee6;
+    --border: 4px;
+    --font-size: 1.3rem;
+    --height: calc(var(--font-size) * 3);
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  .button--secondary {
+    font-size: var(--font-size);
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-flex;
+    position: relative;
+    padding: 0 2em;
+    background-image: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 50%);
+    height: var(--height);
+    border-radius: calc(var(--height) / 2);
+    align-items: center;
+    background-size: 200% 100%;
+    transition: background-position 0.2s ease-out;
+    background-position: 0 0;
+  }
+  
+  .button--secondary:hover {
+    color: #fff;
+    background-position: 100% 0;
+  }
+  
+  .button--secondary:before {
+    content: "";
+    position: absolute;
+    left: var(--border);
+    top: var(--border);
+    right: var(--border);
+    bottom: var(--border);
+    background: var(--bg-color);
+    border-radius: calc(var(--height) / 2);
+    transition: background 0.2s ease-out;
+  }
+  
+  .button--secondary > span {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: #fff;  /* Set text color to white */
+    -webkit-text-fill-color: white;  /* Ensure the text fill color is white */
+  }
+  
+  .button--secondary:hover {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  }
+  
+  .button--secondary:hover > span {
+    -webkit-text-fill-color: #fff;
+  }
+  
+  .button--secondary:hover:before {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .sign-up{
+    color:#fff;
+    transition:.2s;
+    text-decoration:none;
+  }
+
+  .sign-up:hover{
+    color:rgb(222, 222, 222);
+    transition:.2s;
+  }

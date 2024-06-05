@@ -74,7 +74,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #2937f0;
-  --bs-link-hover-color: #212cc0;
+  --bs-link-hover-color: rgb(222, 222, 222);
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -8032,6 +8032,10 @@ textarea.form-control-lg {
   font-weight: bolder !important;
 }
 
+.fw-boldest {
+  font-weight: 900 !important;
+}
+
 .lh-1 {
   line-height: 1 !important;
 }
@@ -8101,7 +8105,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-white), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -10998,3 +11002,4 @@ button{
   }
 
 }
+
